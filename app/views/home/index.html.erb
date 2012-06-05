@@ -1,0 +1,16 @@
+<%= form_for :q do |f| %>
+	<%= f.label :location_1 %>
+	<%= f.text_field :location_1 %>
+	<%= f.label :location_2 %>
+	<%= f.text_field :location_2 %>
+	<%= f.submit "See Happiness" %>
+<% end %>
+
+<% @locations.each do |location| %>
+	<h2><%= location.name %></h2>
+	<strong>Happiness Score: </strong> <%= location.happiness %>
+<% end %>
+<% if @happiest %>
+	<h1><%= @happiest.name %> is the happier city.</h1>
+<% end %>
+
