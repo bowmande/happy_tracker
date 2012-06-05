@@ -2,3 +2,6 @@
 
 The happy tracker is a simple application that accepts 
 two cities and searches twitter to determine which city is the happiest.
+
+
+The app is running at: http://warm-leaf-8143.herokuapp.com/
